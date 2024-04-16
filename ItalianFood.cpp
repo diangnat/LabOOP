@@ -34,12 +34,12 @@ ItalianFood::ItalianFood(ItalianFood &&other) noexcept : Order(other),nameDish(o
 }
 
 ////operator =
-//
-//ItalianFood &ItalianFood::operator=(const ItalianFood& other) {
-//    if (this != &other){
-//        Order::operator=(other);
-//        nameDish = other.nameDish;
-//        ingredient = other.ingredient;
-//    }
-//    return *this;
-//}
+
+ItalianFood &ItalianFood::operator=(const ItalianFood& other) {
+    if (this != &other){
+        Order::operator=(other);
+        nameDish = other.nameDish;
+        ingredient = other.ingredient;
+    }
+    return *this;
+}

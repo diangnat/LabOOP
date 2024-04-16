@@ -40,7 +40,7 @@ public:
     Order(const Order& other);
 //
 //    //operator =
-//    Order& operator=(const Order& other);
+    Order& operator=(const Order& other);
 };
 
 

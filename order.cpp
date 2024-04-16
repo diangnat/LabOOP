@@ -42,15 +42,15 @@ Order::Order(Order &&other): totalAmount(other.totalAmount), status(other.status
 }
 
 // copy constructor
-//Order::Order(const Order &other):totalAmount(other.totalAmount),orderId(other.orderId),status(other.status) {}
+Order::Order(const Order &other):totalAmount(other.totalAmount),orderId(other.orderId),status(other.status) {}
 
 //operator =
 
-//Order &Order::operator=(const Order &other) {
-//    if(this!= &other){
-//        totalAmount = other.totalAmount;
-//        orderId = other.orderId;
-//        status = other.status;
-//    }
-//    return *this;
-//}
+Order &Order::operator=(const Order &other) {
+    if(this != &other){
+        totalAmount = other.totalAmount;
+        orderId = other.orderId;
+        status = other.status;
+    }
+    return *this;
+}

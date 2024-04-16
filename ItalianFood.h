@@ -19,7 +19,7 @@ public:
     ItalianFood(string nameDish,int ingredient);
     ItalianFood(ItalianFood&& other)noexcept;
     ItalianFood(const ItalianFood& other);
-//    ItalianFood& operator=(const ItalianFood& other);
+    ItalianFood& operator=(const ItalianFood& other);
     ~ItalianFood();
 
     void setNameDish(string newName);
