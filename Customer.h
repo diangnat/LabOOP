@@ -6,25 +6,28 @@
 #define LABA2_3_CUSTOMER_H
 #include <iostream>
 #include <string.h>
+#include "Person.h"
 #include <fstream>
 using namespace std;
 
 #endif //LABA2_3_CUSTOMER_H
 
 
-class Customer {
+class Customer: public Person{
 private:
-    string name;
     string phoneNumber;
     string address;
+
 public:
-    Customer(string n);
+    Customer();
 
-    Customer(string n, string phone);
+    Customer(string phone);
 
-    Customer(string n, string phone, string addr);
+//    Customer(string n, string phone);
 
-    void setName(string n);
+    Customer(string phone, string addr);
+
+//    void setName(string n);
 
     void setPhoneNumber(string phone);
 
