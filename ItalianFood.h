@@ -17,8 +17,8 @@ public:
     ItalianFood();
     ItalianFood(string nameDish);
     ItalianFood(string nameDish,int ingredient);
-//    ItalianFood(ItalianFood&& other)noexcept;
-//    ItalianFood(const ItalianFood& other);
+    ItalianFood(ItalianFood&& other)noexcept;
+    ItalianFood(const ItalianFood& other);
 //    ItalianFood& operator=(const ItalianFood& other);
     ~ItalianFood();
 

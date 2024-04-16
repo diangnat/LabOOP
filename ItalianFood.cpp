@@ -21,18 +21,18 @@ void ItalianFood::setIngredient(int newIngredient) {ingredient = newIngredient;}
 //}
 
 //copy constructor
-//ItalianFood::ItalianFood(const ItalianFood &other): Order(other) {
-//    nameDish = other.nameDish;
-//    ingredient = other.ingredient;
-//}
-//
-////move constructor
-//
-//ItalianFood::ItalianFood(ItalianFood &&other) noexcept : Order(other),nameDish(other.nameDish),ingredient(other.ingredient) {
-//    nameDish = nullptr;
-//    ingredient = NULL;
-//}
-//
+ItalianFood::ItalianFood(const ItalianFood &other): Order(other) {
+    nameDish = other.nameDish;
+    ingredient = other.ingredient;
+}
+
+//move constructor
+
+ItalianFood::ItalianFood(ItalianFood &&other) noexcept : Order(other),nameDish(other.nameDish),ingredient(other.ingredient) {
+    nameDish = nullptr;
+    ingredient = NULL;
+}
+
 ////operator =
 //
 //ItalianFood &ItalianFood::operator=(const ItalianFood& other) {
